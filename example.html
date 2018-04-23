@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Example Implementation</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="alMainAlert/alMainAlert.js"></script>
+    <link rel="stylesheet" type="text/css" href="alMainAlert/css/alMainAlert.css" />
+    
+    <style>
+      html, body {
+        padding: 0px;
+        margin: 0px;
+      }
+      
+      .content {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+    <h1>AlMainAlert Example</h1>
+      <b>Overlay</b><br />
+      <input type="button" onclick="$.alMainAlert({message: 'Testing a really long message this is a really long message testing a really long message blah blah blah blahTesting a really long message this is a really long message testing a really long message blah blah blah blahTesting a really long message this is a really long message testing a really long message blah blah blah blah'});" value="Add Alert Long Message" />
+      <input type="button" onclick="$.alMainAlert({message: 'Test Alert'});" value="Add Alert" />
+      <input type="button" onclick="$.alMainAlert();" value="Add Alert Default No Settings" />
+      <input type="button" onclick="$.alMainAlert({message: 'Example Error', class: 'alMainAlertError'});" value="Add Alert Error" /><br />
+      <br />
+      <b>Block</b><br />
+      <input type="button" onclick="$.alMainAlert({message: 'Testing a really long message this is a really long message testing a really long message blah blah blah blahTesting a really long message this is a really long message testing a really long message blah blah blah blahTesting a really long message this is a really long message testing a really long message blah blah blah blah', type: 'block'});" value="Add Alert Long Message" />
+      <input type="button" onclick="$.alMainAlert({message: 'Test Alert', type: 'block'});" value="Add Alert" />
+      <input type="button" onclick="$.alMainAlert({message: 'Example Error', class: 'alMainAlertError', type: 'block'});" value="Add Alert Error" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+/**
+ * Simple jQuery plugin for showing alerts and errors on a page.
+ * 
+ * @author Timothy Wilson 2018 <https://github.com/Altrozero>
+ */
+
+div.alMainAlert, div.alMainAlertError {
+  position: relative;
+  padding: 10px 50px 10px 30px;
+  
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+div.alMainAlertError {
+  background-color: #f00;
+
+  color: #fff;
+}
+
+div.alMainAlert {
+  background-color: #9c9;
+
+  color: #fff;
+}
+
+div.alMainAlertClose {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+
+  cursor: pointer;
+  font-family: Arial, Veranda;
+}
