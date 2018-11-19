@@ -15,13 +15,13 @@ Add to the head of the HTML file, adjust paths accordingly
 ### Standard alert with a message
 
 ```
-$.alSiteAlerts({message: 'Hello World'});
+$.alMainAlerts({message: 'Hello World'});
 ```
 
 ### Applying a style
 
 ```
-$.alSiteAlerts({message: 'Hello World', class: 'alMainAlertError'});
+$.alMainAlerts({message: 'Hello World', class: 'alMainAlertError'});
 ```
 
 Default Styles
@@ -36,7 +36,7 @@ Error: alMainAlertError
 There are two types, overlay is used by default. You can specify "block" if you do not want the alert to appear on top of anything else.
 
 ```
-$.alSiteAlerts({message: 'Hello World', type: 'block'});
+$.alMainAlerts({message: 'Hello World', type: 'block'});
 ```
 
 Strongly suggest you do not mix block with overlay or risk message alerts stacked on top of each other.
